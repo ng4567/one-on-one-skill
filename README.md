@@ -1,0 +1,1 @@
+GitHub Copilot CLI Skill to automatically generate my manager's 1/1 meeting templates using WorkIQ and M365 Data:
