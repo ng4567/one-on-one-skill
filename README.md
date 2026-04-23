@@ -22,12 +22,12 @@ winget upgrade --id GitHub.cli --id GitHub.cli.copilot
 gh auth login
 ```
 
-## Install skill
+## Install skill for GitHub Copilot CLI
  
-**Important: Select Global scope (NOT REPO)**
+**This installs with user not project scope**
 
 ```powershell
-gh skill install ng4567/one-on-one-skill one-on-one-template
+gh skill install ng4567/one-on-one-skill one-on-one-prep --agent --scope user
 ```
 
 ## Run With Copilot CLI
