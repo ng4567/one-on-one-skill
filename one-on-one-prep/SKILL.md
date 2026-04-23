@@ -1,6 +1,6 @@
 ---
-name: one-on-one-template
-description: "Create 1:1 templates and manager updates from the signed-in user's last 14 days of Microsoft 365 and MCAPS context. Use for one-on-one prep, weekly recaps, Scott Bounds updates, RYG highlights, blockers, opportunity and milestone status, meeting follow-ups, email, calendar, Teams, document summaries, WorkIQ, MCAPSIQ, and MSX context."
+name: one-on-one-prep
+description: "Fills pre 1:1 templates and manager updates from the signed-in user's last 14 days of Microsoft 365 and MCAPS context. Use for one-on-one prep, weekly recaps, Scott Bounds updates, RYG highlights, blockers, opportunity and milestone status, meeting follow-ups, email, calendar, Teams, document summaries, WorkIQ, MCAPSIQ, and MSX context."
 argument-hint: "[optional focus such as account, opportunity, or date range]"
 user-invocable: true
 allowed_tools:
@@ -10,9 +10,9 @@ allowed_tools:
 license: MIT
 ---
 
-# One-on-One Template Builder
+# One-on-One Prep
 
-This skill prepares a concise one-on-one brief for the user's manager **Scott Bounds** (`sbounds@microsoft.com`) using the signed-in user's recent workplace context from the last 14` days.
+This skill prepares a concise one-on-one brief for the user's manager **Scott Bounds** (`sbounds@microsoft.com`) using the signed-in user's recent workplace context from the last 14 days.
 
 ## Defaults
 
