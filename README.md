@@ -27,7 +27,7 @@ gh auth login
 **This installs with user not project scope**
 
 ```powershell
-gh skill install ng4567/one-on-one-skill one-on-one-prep --agent --scope user
+gh skill install ng4567/one-on-one-skill one-on-one-prep --agent github-copilot --scope user
 ```
 
 ## Run With Copilot CLI
