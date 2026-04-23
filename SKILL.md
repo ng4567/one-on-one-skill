@@ -7,6 +7,7 @@ allowed_tools:
    - workiq
    - mcaps-iq:mcaps
    - msx
+license: MIT
 ---
 
 # One-on-One Template Builder
