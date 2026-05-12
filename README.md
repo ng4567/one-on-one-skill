@@ -50,7 +50,7 @@ gh auth login
 **Installs with user not project scope. Run as a single chained command to install every skill in the repo:**
 
 ```powershell
-gh skill install ng4567/one-on-one-skill one-on-one-prep --agent github-copilot --scope user; gh skill install ng4567/one-on-one-skill vpn-toggle --agent github-copilot --scope user
+gh skill install ng4567/ng-msft-workflow-skills one-on-one-prep --agent github-copilot --scope user; gh skill install ng4567/ng-msft-workflow-skills vpn-toggle --agent github-copilot --scope user
 ```
 
 ## Run With Copilot CLI
