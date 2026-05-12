@@ -1,0 +1,17 @@
+# vpn-toggle whitelist
+#
+# Lists MCP servers (plugins) and individual tools that require the Microsoft
+# corporate VPN (MSFT-AzVPN-Manual) to be connected before invocation.
+#
+# - `plugins:` matches by MCP server / plugin name. All tools exposed by a
+#   listed plugin are guarded.
+# - `tools:` matches by individual tool name. Use this for finer control or
+#   for built-in tools (e.g., web_fetch hitting an intranet host).
+#
+# Edit freely. The skill reads this file every run.
+
+plugins:
+  - mcaps-iq
+  - msx
+
+tools: []
