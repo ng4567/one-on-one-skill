@@ -2,7 +2,7 @@
 name: vpn-toggle
 description: "Ensures the Microsoft corporate VPN is connected before invoking any whitelisted MCP server (plugin) or tool. Reads the user-defined whitelist in vpn-toggle/whitelist.yaml, checks whether the MSFT-AzVPN-Manual connection is up, and runs `rasdial \"MSFT-AzVPN-Manual\"` to bring it up if it is not. Use whenever about to call a tool from a plugin/MCP server that requires corpnet access (e.g., mcaps-iq, msx)."
 user-invocable: true
-allowed_tools:
+allowed-tools:
    - shell(rasdial)
    - shell(rasdial *)
 license: MIT

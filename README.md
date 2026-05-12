@@ -12,7 +12,9 @@ GitHub Copilot CLI Skill to automatically generate my manager's 1/1 meeting temp
 
 Certain plugins and tools I use require being connected to the corporate VPN. This skill checks against a whitelist of user-defined plugins (including MCP servers) and tools and automatically turns on the VPN before invoking them if it is not turned on.
 
-Note that this skill only works on Windows, as it uses `rasdial` to turn on the VPN. It does not matter weather the user uses Powershell 5,7 or cmd.
+**Architecture:** Two complementary pieces. (1) A `preToolUse` Copilot hook (`vpn-toggle/hooks/vpn-guard.ps1`) fires automatically before every tool call — if the tool name matches `^(msx-|mcaps-iq)` and `MSFT-AzVPN-Manual` is down, it runs `rasdial`, waits 5s for routes to settle, then allows the call (or denies with a clear reason if dialing fails). (2) The `SKILL.md` itself is a user-invocable fallback / documentation surface for ad-hoc checks. The hook is the enforcement gate; the skill is the manual escape hatch.
+
+Install the hook with `vpn-toggle/install-hook.ps1` (or copy `vpn-toggle/hooks/*` into `~/.copilot/hooks/` yourself). Note that this only works on Windows, as it uses `rasdial`. It does not matter whether the user uses Powershell 5, 7 or cmd.
 
 **Whitelist config:** `vpn-toggle/whitelist.yaml` (relative to the installed skill directory).
 
